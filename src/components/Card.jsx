@@ -31,12 +31,12 @@ const styles = {
 };
 
 function Card(props) {
-  return(
+  return(    
     <div className='card'>
       <a className='links' style={styles.a} href={props.path}>{props.title}</a>
       <p style={styles.p}>{props.description}</p>
       <img src={props.image}/>
-    </div>
+    </div>    
   );
 }
 
