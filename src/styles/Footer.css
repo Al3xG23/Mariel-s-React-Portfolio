@@ -1,0 +1,13 @@
+/* TODO */
+.footer {
+    background: #003b36;
+    height: 200px;
+  }
+  
+  .footer div {
+    margin: 0;
+    padding-top: 75px;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+  }
