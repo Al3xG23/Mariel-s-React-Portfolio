@@ -1,4 +1,6 @@
 // TODO
+import '../styles/Navbar.css';
+
 const styles = {
   card: {
     margin: 10,
@@ -10,13 +12,17 @@ const styles = {
     fontSize: '1.2rem',
     color: '#003b36',
     padding: '0 20px',
-  },
+  }, 
 };
 
 function Navbar() {
   return (
     <div style={styles.card}>
-      <div style={styles.heading}>Home</div>
+      <ul className='nav' style={styles.heading}>
+        <li>About Me</li>
+        <li>Contact</li>
+        <li>List of Works</li>
+        </ul>
     </div>
   );
 }
