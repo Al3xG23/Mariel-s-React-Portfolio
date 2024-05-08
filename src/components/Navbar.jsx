@@ -20,8 +20,9 @@ function Navbar() {
     <div style={styles.card}>
       <ul className='nav' style={styles.heading}>
         <li>About Me</li>
+        <li>Portfolio</li>
         <li>Contact</li>
-        <li>List of Works</li>
+        <li>Resume</li>
         </ul>
     </div>
   );
