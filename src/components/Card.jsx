@@ -1,5 +1,5 @@
 // TODO
-import '../styles/CardList.css';
+import '../styles/Card.css';
 import image1 from "../assets/Travel-Weather.png";
 import image2 from "../assets/Password-Generator.png";
 import image3 from "../assets/Work-Day-Scheduler.png";
@@ -17,19 +17,13 @@ const work = [
 ];
 
 const styles = {
-  card:{    
-    padding: 10,
-    border: 'solid',       
-  },
   a:{
-    color: '#48beff', 
+    fontSize: 40,
+    color: '#48beff',
   },
   p:{
+    fontSize: 30,
     color: '#68edc6'
-  },
-  img: {
-    maxwidth: 50,
-    maxheight: 50,
   },
   content: {
     padding: 20,
@@ -38,8 +32,8 @@ const styles = {
 
 function Card(props) {
   return(
-    <div className='card' style={styles.card}>
-      <a href={props.path} style={styles.a}>{props.title}</a>
+    <div className='card'>
+      <a className='links' style={styles.a} href={props.path}>{props.title}</a>
       <p style={styles.p}>{props.description}</p>
       <img src={props.image}/>
     </div>
@@ -48,7 +42,7 @@ function Card(props) {
 
 function CardList() {
   return (
-    <div className='cardList'>
+    <div>
       {work.map((item, index) => (
         <Card key={index} title={item.title} path={item.path} description={item.description} image={item.image}/>
       ))}

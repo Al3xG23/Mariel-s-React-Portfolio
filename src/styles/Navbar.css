@@ -1,0 +1,8 @@
+.nav li {
+    display: inline-block;
+    justify-content: space-between;
+    border: 'solid';
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  },
