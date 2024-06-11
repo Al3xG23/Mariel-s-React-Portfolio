@@ -19,8 +19,8 @@ function App() {
         <CardList />
       </div>
 
-      {/* <Contact /> */}
       {/* <Resume /> */}
+      {/* <Contact /> */}
       <Footer />
 
     </div>
