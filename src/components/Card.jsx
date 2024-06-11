@@ -1,4 +1,3 @@
-// TODO
 import '../styles/Card.css';
 import image1 from "../assets/Travel-Weather.png";
 import image2 from "../assets/Password-Generator.png";
@@ -33,7 +32,7 @@ const styles = {
 function Card(props) {
   return(    
     <div className='card'>
-      <a className='links' style={styles.a} href={props.path}>{props.title}</a>
+      <a className='links' style={styles.a} href={props.path}>{props.title} {props.path}</a>
       <p style={styles.p}>{props.description}</p>
       <img src={props.image}/>
     </div>    
